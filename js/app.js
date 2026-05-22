@@ -1,9 +1,7 @@
 import { SalzigFramework } from './framework.js';
 
-// Inicializamos el framework apuntando al contenedor principal
 const app = new SalzigFramework('app');
 
-// Definimos la estructura de nuestra página usando HTML dentro de JavaScript
 app.registerComponent('MainLayout', (state) => {
     return `
         <header class="site-header">
@@ -25,16 +23,13 @@ app.registerComponent('MainLayout', (state) => {
     `;
 });
 
-// El estado global con la información de tu web
 const siteState = {
     title: "SALZIG 666",
     author: "Salzig"
 };
 
-// Ejecutamos el renderizado en el navegador
 app.render('MainLayout', siteState);
 
-// Agregamos eventos de JavaScript después de que el HTML exista en pantalla
 document.getElementById('actionBtn').addEventListener('click', () => {
     alert('¡Framework Salzig respondiendo perfectamente en tiempo real!');
 });
