@@ -1,4 +1,4 @@
-/* Estilos Globales */
+
 :root {
     --bg-color: #0f0f11;
     --card-bg: #16161a;
@@ -26,7 +26,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Encabezado */
 .site-header {
     text-align: center;
     margin-bottom: 40px;
@@ -45,7 +44,6 @@ body {
     margin-top: 5px;
 }
 
-/* Tarjeta de Contenido */
 .card {
     background-color: var(--card-bg);
     border: 1px solid #2e3440;
@@ -63,7 +61,6 @@ body {
     line-height: 1.6;
 }
 
-/* Botón */
 .btn {
     background-color: var(--accent-color);
     color: white;
@@ -82,7 +79,6 @@ body {
     background-color: var(--accent-hover);
 }
 
-/* Pie de página */
 .site-footer {
     text-align: center;
     margin-top: 50px;
